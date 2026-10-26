@@ -1,0 +1,28 @@
+{
+	"schemaVersion": 1,
+	"id": "hack",
+	"version": "${version}",
+	"name": "Hack",
+	"description": "For hackers",
+	"authors": [
+		"LOT"
+	],
+	"contact": {},
+	"license": "CC0-1.0",
+	"icon": "assets/hack/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"lot.hack.Hack"
+		]
+	},
+	"mixins": [
+		"hack.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
