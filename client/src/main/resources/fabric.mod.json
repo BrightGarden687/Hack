@@ -19,6 +19,7 @@
 	"mixins": [
 		"hack.mixins.json"
 	],
+	"accessWidener": "bonan-reborn.classtweaker",
 	"depends": {
 		"fabricloader": ">=0.20.1",
 		"minecraft": "~26.3",
