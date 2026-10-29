@@ -11,6 +11,7 @@ import lot.hack.event.EventListenersCaller;
 import lot.hack.gui.GUIs;
 import lot.hack.keybind.KeybindHandler;
 import lot.hack.module.Modules;
+import lot.hack.packet.PacketManager;
 import lot.hack.rotation.RotateCaller;
 
 public class Hack implements ModInitializer {
@@ -20,6 +21,7 @@ public class Hack implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		EventListenersCaller.INSTANCE.initialize();
+		PacketManager.INSTANCE.initialize();
 		KeybindHandler.INSTANCE.initialize();
 		Modules.INSTANCE.initialize();
 		RotateCaller.INSTANCE.initialize();

@@ -3,9 +3,9 @@ package lot.hack.setting.value.values;
 import java.util.ArrayList;
 import java.util.List;
 
+import lot.hack.common.FloatRange;
+import lot.hack.common.IntRange;
 import lot.hack.setting.value.Value;
-import lot.hack.utils.FloatRange;
-import lot.hack.utils.IntRange;
 
 public class Configurable extends Value<List<Value<?>>> {
     public Configurable(String name) {
@@ -24,8 +24,8 @@ public class Configurable extends Value<List<Value<?>>> {
         return value;
     }
 
-    public ValueIntRange intRangeValue(String name, int defaultMinValue, int defaultMaxValue, int min, int max) {
-        ValueIntRange value = new ValueIntRange(name, new IntRange(defaultMinValue, defaultMaxValue), min, max);
+    public ValueIntRange intRangeValue(String name, int defaultStart, int defaultEnd, int min, int max) {
+        ValueIntRange value = new ValueIntRange(name, new IntRange(defaultStart, defaultEnd), min, max);
         this.value.add(value);
         return value;
     }
@@ -36,8 +36,14 @@ public class Configurable extends Value<List<Value<?>>> {
         return value;
     }
 
-    public ValueFloatRange floatRangeValue(String name, float defaultMinValue, float defaultMaxValue, float min, float max, float step) {
-        ValueFloatRange value = new ValueFloatRange(name, new FloatRange(defaultMinValue, defaultMaxValue), min, max, step);
+    public ValueFloatRange floatRangeValue(String name, float defaultStart, float defaultEnd, float min, float max, float step) {
+        ValueFloatRange value = new ValueFloatRange(name, new FloatRange(defaultStart, defaultEnd), min, max, step);
+        this.value.add(value);
+        return value;
+    }
+
+    public ValueMode modeValue(String name) {
+        ValueMode value = new ValueMode(name);
         this.value.add(value);
         return value;
     }

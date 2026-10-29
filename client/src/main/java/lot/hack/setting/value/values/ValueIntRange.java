@@ -1,7 +1,7 @@
 package lot.hack.setting.value.values;
 
+import lot.hack.common.IntRange;
 import lot.hack.setting.value.Value;
-import lot.hack.utils.IntRange;
 
 public class ValueIntRange extends Value<IntRange> {
     private final int min, max;

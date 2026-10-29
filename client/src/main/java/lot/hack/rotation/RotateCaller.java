@@ -3,7 +3,7 @@ package lot.hack.rotation;
 import java.util.ArrayList;
 import java.util.List;
 
-import lot.hack.utils.Initializable;
+import lot.hack.common.Initializable;
 import lot.hack.utils.PlayerUtil;
 
 public class RotateCaller implements Initializable {

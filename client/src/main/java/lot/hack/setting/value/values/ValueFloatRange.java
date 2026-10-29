@@ -1,7 +1,7 @@
 package lot.hack.setting.value.values;
 
+import lot.hack.common.FloatRange;
 import lot.hack.setting.value.Value;
-import lot.hack.utils.FloatRange;
 
 public class ValueFloatRange extends Value<FloatRange> {
     private final float min, max, step;

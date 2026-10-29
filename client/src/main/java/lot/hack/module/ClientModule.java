@@ -1,9 +1,9 @@
 package lot.hack.module;
 
+import lot.hack.common.Initializable;
 import lot.hack.event.EventListener;
 import lot.hack.event.EventListenersCaller;
 import lot.hack.setting.value.values.ToggleableConfigurable;
-import lot.hack.utils.Initializable;
 import lot.hack.utils.MCInstances;
 
 public abstract class ClientModule extends ToggleableConfigurable implements Initializable, MCInstances, EventListener {

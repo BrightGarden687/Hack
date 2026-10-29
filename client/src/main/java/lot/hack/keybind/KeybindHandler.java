@@ -1,14 +1,13 @@
 package lot.hack.keybind;
 
-import java.io.Closeable;
 import java.util.ArrayList;
 import java.util.List;
 
+import lot.hack.common.Initializable;
 import lot.hack.event.Event;
 import lot.hack.event.EventListener;
 import lot.hack.event.EventListenersCaller;
 import lot.hack.event.events.input.EventKey;
-import lot.hack.utils.Initializable;
 import lot.hack.utils.MCInstances;
 
 public class KeybindHandler implements Initializable, MCInstances, EventListener {

@@ -11,16 +11,17 @@ public class GUI {
         this.elements = elements;
     }
 
-    public void draw() {
+    public void onInput(MouseInput mouseInput) {
         for (Element element : elements) {
-            element.draw(renderer);
+            if (element.onInput(mouseInput, 0, 0))
+                break;
         }
     }
 
-    public void onInput(MouseInput mouseInput) {
+    public void draw() {
         for (Element element : elements) {
-            if (element.onInput(mouseInput))
-                break;
+            element.update();
+            element.draw(renderer, 0, 0);
         }
     }
 }

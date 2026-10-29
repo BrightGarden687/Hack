@@ -8,6 +8,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 import lot.hack.event.events.game.EventGameLoop;
 import lot.hack.event.events.world.EventTick;
+import lot.hack.packet.PacketManager;
 import lot.hack.rotation.RotateCaller;
 
 @Mixin(Minecraft.class)
@@ -23,6 +24,8 @@ public class MixinMinecraft {
 
 	@Inject(method = "runTick", at = @At("HEAD"))
 	private void callGameLoopEvent(CallbackInfo ci) {
+		if (PacketManager.INSTANCE.should()) PacketManager.INSTANCE.update();
+		else PacketManager.INSTANCE.reset();
 		EventGameLoop.INSTANCE.call();
 	}
 }

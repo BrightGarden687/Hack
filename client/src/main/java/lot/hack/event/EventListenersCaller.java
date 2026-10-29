@@ -3,7 +3,7 @@ package lot.hack.event;
 import java.util.ArrayList;
 import java.util.List;
 
-import lot.hack.utils.Initializable;
+import lot.hack.common.Initializable;
 
 public class EventListenersCaller implements Initializable {
     public static final EventListenersCaller INSTANCE = new EventListenersCaller();

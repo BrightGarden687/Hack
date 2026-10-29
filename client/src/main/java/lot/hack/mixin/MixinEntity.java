@@ -11,6 +11,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import lot.hack.rotation.CameraRotation;
 import lot.hack.rotation.RotateUtil;
 
+// LOL 67
 @Mixin(Entity.class)
 public class MixinEntity {
 

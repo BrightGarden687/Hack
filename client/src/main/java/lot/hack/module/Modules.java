@@ -2,10 +2,10 @@ package lot.hack.module;
 
 import java.util.ArrayList;
 
+import lot.hack.common.Initializable;
 import lot.hack.module.modules.combat.ModuleAttackAura;
 import lot.hack.module.modules.movement.ModuleSprint;
 import lot.hack.module.modules.player.ModuleAutoClicker;
-import lot.hack.utils.Initializable;
 
 public class Modules extends ArrayList<ClientModule> implements Initializable {
     public static final Modules INSTANCE = new Modules();

@@ -23,8 +23,9 @@ dependencies {
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	implementation("net.fabricmc.fabric-api:fabric-api:${providers.gradleProperty("fabric_api_version").get()}")
 
-	implementation(project(":ai-slop"))
+	implementation(project(":common"))
 	implementation(project(":gui-builder"))
+	implementation(project(":ai-slop"))
 }
 
 loom {

@@ -1,4 +1,4 @@
-package lot.hack.utils;
+package lot.hack.common;
 
 public class ClosedRange<T extends Comparable<T>> {
     private T min, max;

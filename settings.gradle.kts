@@ -15,6 +15,7 @@ pluginManagement {
 
 rootProject.name = "hack"
 
-include("client")
-include("ai-slop")
+include("common")
 include("gui-builder")
+include("ai-slop")
+include("client")
